@@ -4,6 +4,7 @@ Sportisimo task
 This is only sample task for interview.
 
 Kindly configure your database connection in .neon file, example:
+	
 	database:
 		dsn: 'mysql:host=127.0.0.1;dbname=sportisimo'
 		user: 'root'
