@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="{$basePath}/css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="{$basePath}/css/styles.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Sportisimo task</title>
+</head>
+
+<body>
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+	{include wrapper}
+
+	{block scripts}
+	<script src="https://nette.github.io/resources/js/3/netteForms.min.js"></script>
+	<script src="https://unpkg.com/naja@2/dist/Naja.min.js"></script>
+	<script type="text/javascript" src="{$basePath}/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		//import naja from 'naja';
+		naja.initialize();
+	</script>
+	{/block}
+</body>
+</html>

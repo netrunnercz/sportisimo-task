@@ -1,0 +1,34 @@
+{layout '@layout.latte'}
+
+{block wrapper}
+<div class="container">
+    <div class="row">
+        <div class="col s1 blue darken-3 left-navigation">
+            <ul role="navigation">
+                <li><i class="material-icons white-text">menu</i></li>
+                <li><a href="#"><i class="material-icons white-text">dashboard</i></a></li>
+                <li><a href="#"><i class="material-icons white-text">group</i></a></li>
+                <li><a href="#"><i class="material-icons white-text">new_releases</i></a></li>
+                <li><a n:href="Brands:"><i class="material-icons white-text">sell</i></a></li>
+            </ul>
+        </div>
+        <div class="col s11">
+            <div class="row blue darken-3 header-row">
+                <div class="col s1">
+                    <h5 class="white-text">SRP</h5>
+                </div>
+                <div class="col s2 offset-s9 white-text">
+                    <a n:href="Sign:out" class="white-text">Odhlásit</a> ({$user->getIdentity()->getId()})
+                </div>
+            </div>
+            <div class="row blue header-row white-text">
+                <h6><i class="material-icons">arrow_back</i> Značky</h6>
+            </div>
+            <div class="row content-wrapper">
+                <div class="content-container">
+                    {include content}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

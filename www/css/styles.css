@@ -1,0 +1,37 @@
+body {
+    background-color: #EEEEEE !important;
+}
+
+.left-navigation {
+    min-height: 100vh !important;
+    width: 4% !important;
+}
+
+.header-row {
+    padding: 1vh !important;
+    margin-bottom: 0 !important;
+}
+
+.content-wrapper {
+    padding: 1em;
+}
+
+.content-container {
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+
+.flash {
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.flash.info {
+    background-color: #99FF99;
+}
+
+.flash.error {
+    background-color: #FF9999;
+}
